@@ -1,0 +1,385 @@
+*1.What is SQL and what is it used for?
+
+2.Can you explain the difference between a primary key and a foreign key?
+
+3.What is normalization in SQL and why is it important?
+
+4.How would you retrieve data from multiple tables using a join?
+
+5.What is a subquery in SQL and how is it used?
+
+6.Can you explain the difference between a clustered and non-clustered index in SQL?
+
+7.What is a stored procedure in SQL and when would you use one?
+
+8.How would you enforce data integrity in a database using constraints?
+
+9.Can you explain the difference between a trigger and a stored procedure in SQL?
+
+10.What is a transaction in SQL and how does it ensure data consistency and integrity?
+
+11.How would you optimize a slow-performing SQL query?
+
+12.Can you describe the basic structure of an SQL statement?
+
+13.What is a view in SQL and how is it used?
+
+14.How would you implement security in a database using SQL?
+
+15.Can you explain the difference between a left join and a right join in SQL?
+
+16.Can you describe the use of group by and having clauses in SQL?
+
+17.How would you perform a backup and restore of a database in SQL?
+
+18.Can you explain the difference between a union and a union all in SQL?
+
+19.Can you describe how to handle null values in SQL?
+
+20.Can you explain the use of aggregate functions in SQL, such as SUM, AVG, MIN and MAX?
+
+
+
+============================================================================================================================================================================
+
+1.Diffrentiate DBMS and RDBMS?
+------------------------------
+DBMS-stands for database management system .it is a software,
+that is used to define create and maintain a database and provides controlled access ti data.
+
+RDBMS-stands for relational database management system.it is used to store and manage only the data that are in the tables.
+
+6.diffrentiate group by and order by?
+-------------------------------------
+*.GROUP BY clause is applicable when we want to use aggregate functions to more than one set of rows.
+
+*.ORDER BY clause is applicable when we want to get the data obtained by a query in the sorting order.
+           
+
+==========================================================================================================================================================================
+
+1.What is SQL and what is it used for?
+---------------------------------------
+SQL stands for structure query language.SQL is language to communicate with the databases.
+SQL is working with databases,inside databases data is available in table format.
+SQL is standard language for accessing and manipulating the databases.
+
+-->it is used to storing and managing the data in RDBMS.
+
+
+2.What is a database?
+---------------------
+organized collection of structured information stored in computer.
+
+ 					(or)
+The required data can be stored in a perticular format into the computer.
+
+3.who uses SQL?
+---------------
+-->developers
+-->data scientists
+-->business proffessionals
+-->accountants etc..
+
+4.which companies are using sql?
+--------------------------------
+-->google
+-->netflix
+-->uber
+-->facebook
+
+5.what is a DDL and DML?
+------------------------
+These two are commands in SQL.DDL stands for data definition language.DML stands for data manipulating language.
+inside the DDL create,alter,drop,truncate,rename these commands are there.
+inside the DML select,update,delete,insert these are there.
+
+
+6.diffrentiate delete,drop and truncate?
+----------------------------------------
+DELETE:removes rows from the table
+-------
+
+DROP:removes a tables from the database.
+-----
+
+TRUNCATE:at a time it remove all rows from a table.
+--------
+
+7.what are the datatypes in SQL?
+--------------------------------
+*.Binary-images
+
+*.NUmeric-float
+
+*.strings-char,varchar,text
+
+*.Date and time-date,time,date time
+ 
+these all datatypes are not supported in  sql only few are there...
+
+*.integer
+*.float
+*.char
+*.varchar(size)
+*.date
+*.time
+*.date time
+
+8.what are constraints and their types?
+---------------------------------------
+SQL constraints are used to specify rules for the data in table.
+
+*.NOT NULL:Ensure that column cannot have an null values.
+----------
+
+*.PRIMARY KEY: A combination of a not null and unique.uniquly identifies each row.
+--------------
+
+*.FOREIGN KEY: prevents action that would destroy links between tables.
+--------------
+
+*.CHECK: ensure that values in a column speciify a specific condition.
+--------
+
+*.DEFAULT: set a default value for a column if no value is specified .
+----------
+
+9.What is primary key?
+----------------------
+The primary key constraint uniquely identifies each record in a table.primary key must contain unique values and
+cannot contain null values,a table have only one primary key,the primary key consists of single or multiple columns(feilds).
+
+10.What is a foreign key?
+------------------------
+A foreign key is a feild  in one the table,that referce to the primary key in another table.
+
+-->the table with the foreign key is called "child table".
+-->the table with the primary key is called ""parent table.
+ it maintain the referntial integrity in databse.
+
+
+11.What are the components of ER diagram?
+ -----------------------------------------
+*.Entity-(weak entity)
+*.Attribute-(key,composite,multivalued,derivied)
+*.Relationships-(one to one,one to many,many to one,many to many)
+
+
+12.what is an entity?
+---------------------
+-->An entity can be living or non-living component.
+-->An entity is showcased as a rectangular in ER diagram
+-->For example,student study cource,here both student and cource are entities.
+
+  (i).Weak entity
+  ----------------
+  -->An entity that relies over the another entity is called "Weak entity".
+  -->The weak entity is showcased as double rectangular in ER diagram. 
+
+
+13.What is Attribute?
+---------------------
+-->An attribute that describes the property of an entity.
+-->An entity is represented as oval shape in ER diagram.
+
+  (i).KEY Attribute
+  ------------------
+  *.key attribute uniquely identifies an entity from an entity set.
+  *.The text of key attribute is underlined
+  *.For example,student roll number can be uniquely identify a student from a set of students.
+
+  (ii).Composite attribute
+  -------------------------
+  *.An attribute that is composed of other attributes is known as "composite attributes".
+  *.The composite attribute is represented with oval and that attribute is further connected with other ovals.
+
+  (iii).Multivalued attributes 
+  -----------------------------
+  -->An attribute that can process more than one value,such attributes are called "Multivalued attributes".
+  -->The double oval is used to represent a multivalued attribute.
+
+
+  (iv).Derived Attributes 
+   ----------------------
+  -->An attribute that can be extracetd from other attributes of the entity is known as "derived attributes".
+  -->In ER diagram,derived attributes represented by dashed oval.
+
+
+14.List the diffrence types of relationship?
+--------------------------------------------
+-->A relationship is showcased by diamond  shape in ER diagram.
+-->it shows the relationship among the entities.
+
+
+  (i).one to one relationship
+  ----------------------------
+   -->When a single element of entity is associated with single elemnet of another entity is called "one to one relationship".
+   -->For example, a student has only one identification card and an identification card is given to one person.
+
+  (ii).one to many relationship
+  ------------------------------
+  -->when a single element of entity is associated with more than one element of another entity that is called "one to many relationship".
+  -->For example,a customer can place many orders but an order cannot placed by many customers.
+ 
+  (iii)Many to one relationship
+  ------------------------------
+  -->More than one element of entity is related with a single element of another entity then it is called "Many to one relationship".
+  -->For example,students enrolls for only one cource,but a cource have many students.
+
+  (iv).many to many relationship
+  -------------------------------
+  -->When more than one element of an entity is associated with the more than one element of another entity that is called "Many to Many relationship".
+  -->For example, an employee can be assigned to many preojects and project can have many employees.
+
+
+
+15.what are the diffrences between entities and relationships?
+--------------------------------------------------------------
+Entity:
+-------
+*.entity is a living or non-living component.
+*.An entity is showcased as a rectangular in ER diagram
+*.entities is only one type "weak entity".
+
+
+Relationship:
+-------------
+*.it shows the relationship among the entities.
+*.A relationship is showcased by diamond  shape in ER diagram.
+*.An entity is four types(one to one,one to many,many to one,many to many)
+
+
+16.Tell me some types of SQL commands?
+---------------------------------------
+*.DDL:create,alter,drop,truncate
+*.DML:select,insert,update,delete
+*.DCL:grant,revoke
+*.TCL:commit,rollback
+
+17.what are the operators in SQL?
+---------------------------------
+*.Arithmatic:+,-,*,/,%
+
+*.Logical:All,AND,ANY,BETWEEN,EXISTS
+
+*.comparison:=,!=,<,>,<>,<=,>=,!<,!>
+
+
+18.What are the aggregate functions?
+-------------------------------------
+*.count():count function is used to count the how much data is available in the certain column.
+----------
+
+*.sum():sum function is used to add the data like avrages,salarys etc..
+--------
+
+*.avarages():we want only certain avarage in the table by using this one we can find out that.
+-----------
+
+*.min():By using min function we can find the min salary,age,marks these types of data we can retrieve.
+--------
+
+*.max():By using max function we can find the min salary,age,marks these types of data we can retrieve. 
+--------
+
+19.How many times of constraints we have?
+-----------------------------------------
+*.domain constraint-not null,check,default(fixed)
+
+*.entity integrity constraint-unique,primary key
+
+*.referntial integrity constarints-foreign key
+
+20.what is data integrity?
+--------------------------
+data integrity is referce to accuracy and contain data
+ex:a person is trying to insert the ph number into the data feild.
+
+
+21.What is Normallization,Denormallization?
+-------------------------------------------
+-->The normallization is process to eliminating the data.
+-->The denormallization is process to combine the data.
+
+
+22.What is the diffrence between the group by clause and having clause?
+-----------------------------------------------------------------------
+group by:The group by statement group the records into summary rows and returns one record from each group.
+---------
+
+having by:The having clause in SQL operates on grouped records and return rows where aggriagte function results matched with given continously only.
+----------
+
+23.What are the joins in SQL?
+-----------------------------
+SQL join statement is used to combine the rows of the data from two or more tables based on common column(between) them.
+SQL joins are can be devided into four types 
+
+  (i).INNER OR EQUI JOIN
+ ------------------------
+  inside the table what data  is same in two tables that data only can retrieve is called "INNER JOIN".
+
+  (ii).LEFT JOIN
+ ----------------
+  SQL left join statement returns all the rows from the left table and matching rows from the right table.
+
+  (iii)RIGHT JOIN
+ -----------------
+  SQL right join statement returns all the rows from the right table and matching rows from the left table.
+
+  (iv).FULL JOIN 
+ ---------------
+  SQL full outer join statement returns all the rows when there is match in either left or right table.
+
+  (v).CROSS OR CARTESSION JOIN
+ ------------------------------
+  By using the join it will do cross the table data.
+
+
+24.What is a sub query and how it works?
+-----------------------------------------
+A sub query is a select quey that is enclosed inside another query.
+The inner select query is usually  used to determine the results of the outer select Query.
+
+work:
+-----
+-->frist inner query excuted.
+-->inner query gives some result.
+-->the output of inner query is substituted in outer query.
+-->On excution,the outer query gives the result
+
+25.What are the diffrent types of sub queries?
+----------------------------------------------
+*.subqueries with the select statement
+*.subqueries with the update statement
+*.subqueries with the delete statement
+*.subqueries with the insert statement
+
+26.What are triggers in SQL?
+----------------------------
+A trigger is user-defined SQL command that is invoked automatically in responce to an event such as insert,delete,update.
+
+
+27.diffrentiate the group by and order by?
+-------------------------------------
+*.GROUP BY clause is applicable when we want to use aggregate functions to more than one set of rows.
+
+*.ORDER BY clause is applicable when we want to get the data obtained by a query in the sorting order.
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
