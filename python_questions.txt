@@ -1,0 +1,1284 @@
+===========================================================================================================================================================================
+PYTHON INTERVIEW QUESTIONS
+===========================================================================================================================================================================
+1.what is intrepreter and how it works?
+---------------------------------------
+Every high level programming language is either a compiler-executed or an interpreter based programming language. 
+That means, the source code written by the developers is either interpreted or compiled.
+Compiler executes the whole program at a time while the interpreter executes instructions line by line. 
+
+
+2.what is python (PVM)?
+-----------------------
+Byte code is then sent to the Python Virtual Machine(PVM) which is the python interpreter.
+PVM converts the python byte code into machine-executable code.
+
+3.why we choose python?
+-----------------------
+
+*.python have simple syntax.
+*.length of the code very small. 
+*.complex problems can be sloved easily.
+
+3.what is the features of python?
+---------------------------------
+python has several features are there..
+
+*.simple easy to learn
+*.python is object oriented
+*.python is open source
+*.python have portability
+*.python is high level programing language.
+*.python have standard libraries(200+)
+
+4.application's of python?
+--------------------------
+*.web & internet developent
+*.desktop GUI application.
+*.artfetial intellegence 
+*.mechine learning
+*.image proecessing application.
+*.games & 3D graphics
+*.network programming 
+*.data base access.
+*.cyber security 
+*.robotics
+
+5.what is a python?
+-------------------
+python is a general purpose high level programing language and
+which is interupted and interactive an object oriented language.
+
+6.why python named as python?
+-----------------------------
+ Guido van Rossum was also reading the published scripts from “Monty Python's Flying Circus”, a BBC comedy series from the 1970s. 
+Van Rossum thought he needed a name that was short, unique, and slightly mysterious, so he decided to call the language Python.
+
+7.what is the current version of python?
+----------------------------------------
+Now the version  of python is 3.11.1
+
+8.How to define the  types of programing language?
+--------------------------------------------------
+ we classified several ways
+ *.it is high level,low level,assemble level
+ *.it is interpreted language ,it is compiler language,it assemble language.
+ *.it is functoinal language and scripting language,object oriented programing language
+ *.it is a statically typed or dynamically typed these are all the ways to define the languages.
+
+9.what is python file format?
+-----------------------------
+python file always saved with ".py" file extension.wherever you can see the .py file extension  the file is nothing but python file.
+
+.pyc file is also python file but it is temporary file 
+
+-->.py file indiactes source code format
+-->.pyc file indicates  mechine code format 
+
+10.why python is very easy?
+---------------------------
+*.the python syntaxes is very easy.
+*.python has less symantics(symbols)
+*.python has got less number of key words(34).
+
+11.how to excute a python?
+--------------------------
+there are lot ways to run the python code.
+
+*.By using  command promt also we can run the python code.first we have to set the path and give the file name then ENTER
+if the code is right it will give output otherwise it will give Error.
+
+*.If you are using the linux then open the terminal after call that file it also one of the way to run the program.
+
+12.What is PEP?
+---------------
+PEP stands for python enhacement proposal.then the current version of PEP is 8.It  deals with style  of writing program.
+we are writing the python code it tell how to write a styles and set up it is take care of it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===========================================================================================================================================================================
+IDENTIFIERS
+===========================================================================================================================================================================
+
+1.what is variable?
+-------------------
+A variable defined as the alternative name of memory location and can have short name or descriptive name.it can be class name or function name
+module name or variable name.
+
+ex:x=10,a=20
+---
+
+2.what is a reserved words?
+--------------------------
+In python some words are reserved to represent some meaning or functionality  such types of words are called "reserved words".
+they are 30+ resrved are there.
+ 
+all the reserved in python contain only alphabets only.
+TRUE,FALSE,NONE  these three only upper case alphabtes,remaining all are lower case.
+
+3.what is a data types and give some data types?
+-------------------------------------------------
+Data type is nothing some of the keyword of programming language.which are used to specify what type of data we stored into the variable.
+
+  python data type categerized into two types:
+  --------------------------------------------
+  (i).fundemental data type:int,float,boolen,complex,string
+  -------------------------
+  (ii).collection data type:list,tuple,set,dict,frozen set,range,byte,byte array.
+  --------------------------
+
+4.what slice operator?
+----------------------
+Slicing means peice,[:] is called slice oparator,which can be used to retrieve the parts of string.python follows zero based index.
+(the index can be either possitive or negetive).the possitive index means forward direction and neggitive index means backward direction.
+
+5.What is type casting?
+-----------------------
+We can convert one type to another type.this type of conversion is called "Type casting".
+===========================================================================================================================================================================
+OPARATORS
+===========================================================================================================================================================================
+
+1.what is an oparartor?
+--------------------
+Any person doing with certain activity is called "oparator".
+an oparator is a symbol that can perforn cenrtain oparations.
+
+they are several oparators is there in python..
+
+ 1.arithmatic oparator(+,-,*,%,/,//,**)
+
+ 2.relational oparator(<,<=,>,>=)
+
+ 3.Equality oparator(==,=!)
+
+ 4.logical oparator(and,or,not)
+
+ 5.Betwise oparator($,|,^,<<,>>)this oparator only applicable for int and boolen oparators.
+
+ 6.Assignment oparator(+=,-=,*=,%=,/=,//=)to assign value to the variable.
+
+ 7.Ternary oparator(x=firstvalue if condition secondvalue)
+
+ 8.special oparator-->the oparator have two inner oparators..
+  (i).identity oparator-->(is) for address comparision and is not-->is not(==) content comparision.
+  (ii).membership oparator-->(in,not in)
+
+===========================================================================================================================================================================
+COMMANDLINE ARGUMENTS
+===========================================================================================================================================================================
+
+
+
+1.What is reading dynamic input from the keyboard?
+--------------------------------------------------
+In python there are two function's are available to read the dynamic input from the keyboard.
+
+i).raw input():This function alway's read the data from the keyboard in the form of a string format.
+--------------we have to convert the data from string type to our required type by using the corresponding
+ 		   typecasting method.
+
+ii).input():this function directly read the data into our required form.we are not required to perform the type casting.
+------------
+
+2.What is commandline arguments?
+--------------------------------
+The arguments which are passing at the time of excution called "commandline arguments".
+
+->argv is not an array,it is alist,it is a sys module.
+
+->within the python program the argumets which are avilable in argv,which is present at sys module.
+
+3.How to convert the commandline arguments?
+-------------------------------------------
+Within the python program commandline argumets are available in string form.we 
+can convert in to corresponding form by using typecasting mrthod().
+
+===========================================================================================================================================================================
+CONTROL FLOW STATEMENTS
+===========================================================================================================================================================================
+
+1.Tell me about control flow statements?
+----------------------------------------
+control statements are three types
+ 
+i).conditional statements(if,if else,if-elif-else)
+ii).Transfer statements(break,continue,pass)
+iii).Iterative statements(for loop,while loop)
+
+   i).conditional statements(if,if else,if-elif-else):
+   --------------------------------------------------
+
+   if:If the condition is true the statement will be excuted. 
+   ---
+   if else:if the condtion is true the condition part will be excuted  othewise else part will be excuted.
+   --------
+   if-elif-else:This statements we will too many statements(elif)if the condition is true the condition part will be excuted  
+   -------------if until last condition is not true then else part will be excuted.
+
+
+ii).Transfer statements(break,continue,pass):
+---------------------------------------------
+  break:we can use the break statements inside the loop it break the loop excution based on some condition.
+  -----
+  continue:we can use the continue the statement inside loop it skip the current iteration and move on to the next iteration.
+  ---------
+  pass:pass is keyword in python 
+  ----
+   -->it is null statement 
+   -->it is a empty statemnt
+   -->it own't do anything
+   In our program syntactically if block is required and which won't do anything then we can define that empty block with pass keyword.
+
+
+iii).Iterative statements(for loop,while loop):If we want excute group of statements multiple times the we should go for iterative loop.
+-----------------------------------------------
+  for loop:If we want excute some action for every element present in the some sequence(it may be string of collections)then we should go for foor loop.
+  ---------
+  while loop:If we want to excute group of statements iteratively untill the some condition is false,the we should go for while loop.
+  -----------
+  nested loop:A loop inside another loop is called Nested loops.
+  ------------
+
+2.why we use Loops?
+-------------------
+we can use the loops to repeate the code excution.
+ 
+3.what is the diffrences between for loop and while loop?
+---------------------------------------------------------
+forloop:repeat the code everytime in sequence.
+--------
+whileloop:repeat the code as long as condition is true.
+----------
+
+4.what is del keyword?
+----------------------
+Del is a keyword in python.
+-->after using the variable,it is a highly recomended to delating that variable if it is no longer time to required,so that the corresponding 
+unwanted object is eligible for garbage collection.we can delate that variable by using del statement.
+
+6.how to find 5*5 matrix?
+-------------------------
+Ex1:
+---
+for i in range(5):
+ for j in range(5):
+   print("*",end="")
+ print("")
+
+Ex2:
+---
+rows=5
+for j in range(1,rows+1):
+     print("*" *j)
+===========================================================================================================================================================================
+STRING DATA STRUCTURE
+========================================================================================================================================================================
+
+1.what is a string?
+-------------------
+String is a sequence or collection of charecters and closed within the quotations is called "string".
+
+2.How to access a charecters of a string?
+-----------------------------------------
+by using index and slicing we can access the charecters.it is a immutable
+
+3.How to removing the spaces from the string?
+---------------------------------------------
+1.lstrip():to remove spaces at left hand side
+2.rstrip():to remove the spaces at right hand side 
+3.strip():to remove the spaces from both sides.
+
+4.how to finding the substrings?
+--------------------------------
+In forward direction  they are two commands are there..
+
+ i).find():it return index of  first occurence of the given string.it is not avilable the we will get an -1.
+
+ ii).index():index() method is exactly same as find() method except that if the specifoed string is not available then we will get an "error".
+
+ex:"python is a very easy language"
+---
+    print(s.find("e"))==>1
+    print(s.index("e"))==>1
+    print(s.find("z"))==>-1
+    print(s.index("z"))==>value error
+
+In backward there are two commands are there....
+
+ i).rfind():it return the last occurence of the given string.if it is not available then we wiil get an -1
+ ii).rindex():rindex() method is exactly same as find() method except that if the specifoed string id not available then we will get an "error".
+
+ex:"python is a very easy language"
+---
+    print(s.rfind("e"))==>24
+    print(s.rindex("e"))==>24
+    print(s.rfind("z"))==>-1
+    print(s.rindex("z"))==>value error
+
+5.How to change the content of the string object?
+-------------------------------------------------
+Once we create a string object,we can't the content.this is a non-changable behaviour is called immuatability.if we are trying to change the 
+content by using replace() method.then those changes a new object will be created .after those will not effect with the excisting object.
+Hence the replace() method using  new object will be created but excisting object won't be changed.
+
+ex:
+---
+  s="learning python is very difficult language"
+  s1=s.replace("difficult","easy")
+  print(s1)
+
+
+6.what is a split() method?
+---------------------------
+We can split the given string according to specified seperator by using split() method.default seperator is space.
+
+7.how to joining the splitting string?
+--------------------------------------
+we can join a group of strings by using "join()" method
+
+8.Changing of a strings?
+------------------------
+ *.upper():lower to upper 
+
+ *.lower():upper to lower
+
+ *.swapcase():all small alphabts are capital and all capital alphabets are small
+
+ *.title case():all words in first letter move to big
+
+ *.capitalize():Only first charecter will be capital and all are small.
+
+
+
+========================================================================================================================================================================
+LIST DATA STRUCTURE
+========================================================================================================================================================================
+
+1.What is a list?
+-----------------
+List  is group values seperated comma and closed with square brackets.square brackets is mandotary.
+-->insertion order is preserved
+-->hetrogenious objects are allowed(1,2.0,2+3j,'hi',True)
+-->Duplicates are allowed.
+-->growable in nature.
+-->slicing and index is possible.
+-->it is muatble.
+
+important functions in list:
+---------------------------------
+  1.len():return the no.of elements present in the list
+
+  2.count():return the no.of occurnace specified item in the list
+
+  3.index():It return the first occurence of the specified element.
+
+  4.append():we can add the item at the end of the list.
+
+  5.Insert():Insert the element specified index position.
+
+  6.Extend():To add all items in one list to another list.
+
+  7.remove():It remove the specified item in the list.if the item is present in the list multiple times it remove 
+   first occurence of the will be removed.if the item not in the list then we will get an error.
+
+  8.pop():It remove and return the last element of the list.
+
+  9.reverse():It revrse the given list.
+
+  10.sort():if the values are not in order then by using the sort function we convert the values in assending order
+  (we can't use hetrogeniuos objects in the sort function) 
+
+
+2.Difference betwen apppend() and insert()
+------------------------------------------
+append():in the list we can add any element it will add on the end of the list.
+---------
+insert():we can insert the element in the perticular index position. 
+--------
+
+3.what is alliasing and cloning?
+--------------------------------
+alliasing:The process of giving another reference variable to the excisting list is called "alliasing".
+---------
+cloning:The process of creating the exaclty the duplicate independent object is called "cloning".
+--------
+
+4.what is nested list?
+----------------------
+A list have inside another list is called another "nested list"
+
+5.What is list comprehension?
+-----------------------------
+A list comprehension is to find the answer to with the short code or less code is called "list comprehension".
+
+
+========================================================================================================================================================================
+TUPLE DATA STRUCTURE
+========================================================================================================================================================================
+
+1.what is a tuple?
+------------------
+A group of values seperated by comma and and closed with the paranthesis is called "tuple data structure".but paranthesis is an optional.
+
+-->inserting  order is preserved.
+-->hetrogenious objects are  allowed.
+-->duplicates are allowed.
+-->slicing and index are also supported.
+-->growable in nature is not suppportd.
+-->it is a immuatabale.
+
+2.tell me tuple function's?
+---------------------------
+  1.len()
+  2.count()
+  3.index()
+  4.sorted()
+3.what is tuple packing and unpacking?
+--------------------------------------
+Tuple pack:
+-----------
+We can create a tuple by using packing group of variable.
+ 
+ex:a,b,c,d=(10,20,30,40)
+---t=a,b,c,d
+   print(d) #here a,b,c,d are packed into the tuple,this is nothing but a tuple packing.
+
+Tuple unpack:
+------------- is the totally revrse of tuple pack.we can unpack a tuple and assign its value to diffrent variables.
+ 
+ ex:
+ ---t=(10,20,30,40)
+    a,b,c,d=t
+    print("a=",a,"b=",b,"c=",c,"d=",d)
+
+4.tell me some diffrences between list and tuple?
+--------------------------------------------------
+ 
+list:
+-----
+*.list is a group of values seperated by comma and closed with square brackets.square brackets is mandotory.
+*.list objects are mutable.once we create a list we can change the any time,any where.
+*.list have comprehension. 
+
+tuple:
+------
+*.tuple is a group of values seperated by comma and closed with the paranthesis but paranthesis is optional.
+*.tuple objects is immuatable.once we create a tuple we can't chnage any modifications on the tuple.
+*.tuple has not supported to the tuple comprehension. 
+
+========================================================================================================================================================================
+SET DATASTRUCTUERS
+========================================================================================================================================================================
+
+1.Tell me some functions of set?
+--------------------------------
+
+*.add: by using the add function we can add items to the set.In add function we can add only one item at once.
+------but set gives the values and it is not in order.
+
+*.update:by using update function we can add items to the set.In update function we can add atleast starting form two elements only.
+---------
+
+*.copy():It return the copy of the set.
+---------
+
+*.pop():It removes the random element from the set.we don't decide wht it is delated.
+--------
+  
+*.remove():It removes the specified element from the set.if the element not present in the set then we will get an key error.
+---------
+
+*.Discard():It is also removes the specified element from the set.but the elment not present in the set then we call that it won't give any error.
+----------
+
+*.clear():it remove all elemnts form the set.
+----------
+
+
+
+2.Mathematical oparations to the set?
+-------------------------------------
+1.union():If two sets are there union oparation can  combine values remove and remaining values of the two sets it give.
+-------- 
+2.Intersection():If two sets are there intersection  oparation can give combine values of the excisting sets.
+---------------
+3.Diffrence():If two sets are  there if we call 1st set it give first  list values removing combining values.
+--------------If two sets are  there if we call 2st set it give second  list values removing combining values.
+
+4.Symmentric-diffrence():If two sets are there Symmentric-diffrence oparation can  combine values remove and remaining values of the two sets it give.
+-------------------------
+
+4.what is a set comprehension?
+------------------------------
+by using set oparator we can find the answers with the short code .
+
+
+========================================================================================================================================================================
+DICTIONARY DATA STRUCTURE
+========================================================================================================================================================================
+
+1.Functions in dictionary?
+--------------------------
+ 1.len()
+ 2.clear()
+ 3.get()
+ 4.pop()
+ 5.popitem()
+ 6.key()
+ 7.values()
+ 8.item()
+ 9.copy()
+ 10.setdefault()
+========================================================================================================================================================================
+functions:
+========================================================================================================================================================================
+
+1.what is a function?
+---------------------
+ a group of functions repeatedly required it is not recomended to write these statements every time seperstely.
+ we have to define these statements as single unit and we can call that unit any no.of times based on our
+ requirment without writing this is nothing but a function.
+ the main advantage of functions is 'code reusability'
+
+2.how many types of python functions?
+-------------------------------------
+ python functions are two types there are
+  1.predifined functions(builtin functions)
+  2.user defined functions
+ 1.predifined functions(builtin functions)
+ -----------------------------------------
+  these functions are coming along with python software automatically.
+  ex:id(),print(),input(),eval()
+  ---
+ 2.predifined functions(builtin functions)
+ -----------------------------------------
+ the functions which developed by programmer explicty,according to business requirement.
+
+ ex or syntax:
+ -------------
+ def fction(parameter):
+   -----------------
+   -----------------
+   -----------------
+   body
+   return value
+
+
+3.tell me types of arguments?
+--------------------------
+arguments are two types 
+  1.formal
+  2.actual
+
+4.tell me actual arguments?
+---------------------------
+actual arguments are 4 types 
+  1.positionl:the arguments are passed to the function into correct order
+  ------------
+  2.keyword:we can pass the arguments values by keyord,here order of arguments not important but no.of arguments
+  --------- must be matched.we have to declare both postional and keyword arguments in this argument but first we 
+            give positional after keyword argument.
+   
+  3.default:some times we can provide default value to our positonal argument.then we give caller function another
+  ----------name old name will be replaced by new name.
+  
+  4.variable length:sometimes we can pass variable no.of arguments to our function.
+  ----------------- we can declare variable length argument with * symbol.
+
+5.what is global and local variable?
+------------------------------------
+ a variable which is declared outside the function is called "global variable"
+ a variable which is declared inside the functon is called "local variable"
+
+6.what is global keyword?
+-------------------------
+ to declare a global variable inside the function to make a global variable to the available function so that 
+ we can perform required modification.
+
+7.what is globals function?
+----------------------------
+ the global and local variable having the same  function name hence we can access the global variable inside the 
+ function by using globals() function
+
+8.what is recursive function?
+-----------------------------
+ A functon that calls itself is known as "recursive function".
+ syntax:   
+ ------    factorial(n):n*factorial(n-1)
+ advantages:
+ -----------
+ --> we can reduce the length of the code and improve readability.
+ -->we can solve complex problems very easily.
+
+9.what is ananymous function?
+-----------------------------
+ some times we can declare a function without name such type of names are called 'ananymous' function.
+ advantage of ananymous function is just for instance(one time usage).
+
+10.what is filter()?
+-------------------
+ A filter function ()is used to filter the values from the given sequence based on some condition.
+
+11.what is map()?
+-----------------
+ for every element in the given sequence,apply some functionalities and generate new elements with the required 
+ modification.for this we should go for map().
+
+12.what is reduce()?
+--------------------
+ reduce() function reduce the sequence of elements into single element by applying a specified function.
+
+13.what is return statement?
+----------------------------
+ function can take input values as parameter and excute business logic and return output the caller with 
+ the return statement.
+
+========================================================================================================================================================================
+decorators:
+========================================================================================================================================================================
+
+ 1.what is decorator function?
+-----------------------------
+ decorator function can take a function as argumentand extended it's functonalities and return modification 
+ function with extended functionalities.
+
+2.what is decorator chaining?
+-----------------------------
+ we can define multiple decorator for the same function and all these decorators will perform "decorator chaining".
+ @decor
+ @decor1.
+
+========================================================================================================================================================================
+Generators:
+========================================================================================================================================================================
+
+1.what is generator?
+--------------------
+-->generator is a function which responsible to generate sequence of values.
+-->we can write a generator function just like ordinary function ,but it's use yield keyword to return values.
+
+========================================================================================================================================================================
+Modules:
+========================================================================================================================================================================
+
+1.What is a module?
+-------------------
+A group of functions,variables,classes are saved into a file which is nothing but a module.
+-->every python file(.py) acts as module
+advantage of module is re-usuability,readability,maintainbility.
+
+Excepton Handling:
+==================
+1.What is a exception?
+----------------------
+An unwanted and unexpected event that disturbs the normal flow of the program is called an exception.
+
+ex:1.zerodivision error
+-- 2.value error
+   3.type error
+   4.filenot found error.
+
+2.what is the purpose of exception handling?
+--------------------------------------------
+it is highly recomended to handle the exception .
+the main objective of exception handling  is greatfull termination of the programe.
+
+3.what is the meaning of exception handling?
+--------------------------------------------
+exception handling  mean doesn't  repairing the exception.we have to define the alternative way of to continue 
+the rest of the program normally.
+
+4.what is risky code?
+---------------------
+The code which may raise the exception is called "risky code".
+
+5.How many types of Errors?
+---------------------------
+The errors which are two types "syntax error and runtime error".
+
+6.what is a syntax error?
+-------------------------
+The error's which are occured because of invalid syntax is called "syntax error".
+
+ex 1: x=10
+--- if x==10
+       pritn("hi")#expected ":"
+ex2:
+----
+      print("hi" #missing paranthesiss
+ 
+  programmer is responsible to correct these errors.once all the syntaxes are corrected the program will be
+  started excuting.
+
+7.what is run time error?
+-------------------------
+Also called as an exception
+
+while excuting the programing if something goes wrong because of end user input or programming logic or memory
+problem etc... then we will get runtime error.
+
+ex1: print(10/0)
+---
+ex2: print(10/"ten")
+----
+ exception handling concept is applicable for runtime errors but not for syntax erors.
+
+8.what is customozide exception handling by using try and exception?
+--------------------------------------------------------------------
+-->It is highly recomended to handling the exceptoin.
+-->the code which may raise the exception is called "risky code" and we have to take the risky code into the 
+   try block.
+-->the corresponding handling code we have to take inside except block 
+
+syntax:  try:
+-------     risky code
+         except xxx:
+            handling code/alternative code 
+
+9.what is default except block?
+-------------------------------
+We can use default except block it will be handle any type of exception[if we are try with multiple blocks then
+default except block should be always last,otherwise we will get an error]
+
+10.what is  nested try-except-finally block?
+-------------------------------------------
+We can take try-except-finally blocks inside try-except-finally block, nested try-except-finally block is possible
+generally a risky code we have to take inside outer try block and take too much risky code we have to written
+in inside inner try block.Inside inner try block any exception is raised then inner except block is  responsible
+handle.if inner except block is not handled then outer except block is responsible to handle.
+
+ex:
+--- try:
+       print("outer try block")
+       try:
+           print("inner try block")
+           print(10/0)
+       except NameError:
+           print("inner except block")
+       finally:
+           print("inner finally block")
+    except:
+       print("outer except block")
+    finally:
+       print("outer finally block")
+
+
+
+11.Else block with try-except-finally?
+--------------------------------------
+Else block will be excuted if and only if there are no exception inside try block.
+
+12.How many types of exception?
+-------------------------------
+exceptions are two types 
+1.predifined exception
+2.userdefined function
+
+1.pre-defined exception:
+----------------------
+->also known as inbuilt exception
+->the exception which are raised automatically by PVM when a perticular event occur are called "predifined 
+exception".
+
+2.userdefined exception:
+------------------------
+->also known as customized exception or programatic exception
+->sometimes we have to define raise exceptions explicity to indicate something goes wrong is called "user defined
+exception".
+
+programmer is responsible to define these exception,python having no idea about these hence we have to raise the
+explicity based on our requirement by using "raise keyword".
+
+
+========================================================================================================================================================================
+LOGGING MODULE
+========================================================================================================================================================================
+
+1.what is logging module?
+-------------------------
+It is highly recomended to store the complete application flow and exception information file.
+this process is called "logging module".
+ 
+the main advantage of logging are :
+1.we can use log files while performing dubugging
+2.we can provide statistics like number request per day etc...
+
+2.what is logging levels?
+-------------------------
+Depending on type of information,logging data deviding into 6 levels,they are
+ CRITICAL==>50
+ ERROR==>40
+ WARNING==>30
+ INFO==>20
+ DEBUG==>10
+ NOTSET==>0
+
+3.How to implement the logging?
+------------------------------
+To perform logging first we required to create a file to stored messages and
+we have to specify which messages we have to store.
+
+ we can do this by using basicConfig() function of logging module.
+
+========================================================================================================================================================================
+FILE HANDLING
+========================================================================================================================================================================
+
+1.how many types of files?
+--------------------------
+Files are two types 1.text files
+                    2.Binary files
+
+1.text files:
+-------------
+  usually we can use text files to store charecter data
+  ex:abc.txt
+  --
+2.Binary files:
+--------------
+  we binary files to store binary data like images,videos,audios,etc...
+
+2.How to open a file?
+---------------------
+Before opening the file like(read,write) on the file,first we have to open that file.
+for that we should use open() function,but that time of open,we have to specify the mode,
+which represent the purpose of opening the file
+ syntax:
+ -------  open(filename,mode) 
+ 
+3.Give me some modes?
+---------------------
+r--->read
+W--->write
+a---->apppend
+r+--->read and write
+w+--->write and read
+a+--->append and read
+x---->open a file 
+
+4.what is with statement?
+-------------------------
+The with statement is can be used while opening a file .
+we can use this to group a file operation of statement with the block
+
+-->the advantage of with statement if it will take care of closing  file after completing all operation's 
+automatically,even incase of exception also,and we are not required to close explicity
+
+5.tell() and seek()?
+--------------------
+tell():
+------- 
+We can used tell() method to return the current position of the cursor(file poitner)from  begining of the file
+*.The position of the first charecter in file is zero just like index.
+seek():
+-------
+We can use the seek()method to move the cursor(file pointer) to the specified location.
+
+6.what is Zipping and Unzipping?
+--------------------------------
+To perform the zip and unzip operation,python contain one in-built module "zipfile"
+this module contain one "Zipclass".
+ 
+The advantages are:
+1.to improve the memory utilization.
+2.wen can reduce the transport time.
+3.we can improve performens.
+
+7.What is pickling and Unpickling?
+----------------------------------
+some time we have to write total state of object to the file and we have read total object from the file
+-->The process of writing state of object to the file is called "pickling".
+-->The process of reading state of an object from the file is called "Unpickling".
+-->We can implent the pickling and unpickling by using pickle module.
+-->pickle module contain dump() and load() function.
+
+
+
+
+
+
+
+
+=======================================================================================================================================================================
+Object oriented programing language(oop's)---PART-1
+========================================================================================================================================================================
+
+1.What is a class? How to define a class?
+-----------------------------------------
+In python everything is an object.To create an object we required a model or blue print or design which is nothing but a "class".
+
+ 
+class Test:
+   'hello python'
+print(Test.__doc__)
+
+
+2.What is an object? how to define it?
+--------------------------------------
+The physical excistance of class is called "object".
+
+
+class Test:
+   def display(self):
+        print("hello python")
+t=Test()
+t.display()
+
+
+3.What is an reference variable?
+--------------------------------
+A variable which can be used to refer an object is called "reference variable".
+
+by using reference variable we can be access propertes and methods of an object.
+
+4.What is a self variable?
+--------------------------
+A self variable which can be always pointing current object (like this keyword in java)
+by using self variable we can access instance variable and instance methods of an object
+
+note: self should be first parameter inside the constructor  def__init__(self):
+----- self should be first parameter inside the instance method def display(self):
+
+
+5.What is a constructor and why it is required?
+-----------------------------------------------
+*.Constructor is a special method in python
+*.By using the "def" keyword we can create constructor.
+*.The name of the constructor should be def __init__(self)
+*.constructor will excuted automatically at the time of object creation.
+*.The main purpose of constructor is declare and intialize instance variables.
+*.self should be the first paramenter of the constructor.
+*.Per one object constructor will excuted once.
+*.Constructor will take  atleast on argument.
+
+
+class Test:
+   def __init__(self):
+        print("hello python")
+t=Test()
+
+
+6.Difrences between Constructor and Method?
+-------------------------------------------
+
+           constructor          						      Method
+           -----------							      -------
+*.constructor name should be def__init__.		     *.Name of the method can be any name.
+
+*.Constructor will excuted at the time of		     *.if we call that method,Method will be excuted.
+  object creation.
+
+*.Per object,cnstructor will excute only once         *.Per object method can be called any no.of times.
+
+*.constuctor are used intial instance variables.	     *..Methtod are used to perform operations.
+
+
+
+
+7.Ho many types of  variables in oops approach?
+-----------------------------------------------
+In object oriented concept three types of varibles are there...
+ 
+*.instance variables
+*.static varibles
+*.local variables 
+
+8.what is a pupose of instance variable and how to use it?
+----------------------------------------------------------
+The value of variables is varied from   object to object  such types of variables is called "instance variables". 
+
+*.we use instance variables inside the constructor and instance method. 
+
+
+9.Where we can declare a instance variables?
+--------------------------------------------
+*.Inside the constructor by using self variable.
+*.Inside the instance method by using self variable.
+*.outside of the class by using object reference.
+
+
+
+10.what is a purpose static variable and how yo use it?
+-----------------------------------------------------
+If the value of variable not varied from object to object such type of variables are called "static variabless".
+
+*.we have to declare these variables within the class and outside of the methods.
+
+
+11.Where we can declare static variables?
+-----------------------------------------
+*.within the class and outside of the any method.
+*.Inside the connstructor by using the class name.
+*.Inside the instance method by using class name.
+*.Inside the classmethod by using by using class name.
+*.Inside the staticmethod by using using class name.
+*.Outside of the class by using class name. 
+
+
+
+12.what is the differences bteween instance and static variables?
+------------------------------------------------------------------
+Incase of instance variables for every object  a seperate copy will be created but in case of static variables for total class 
+only one copy will be created and every object of that class.
+
+
+13.How many types of methos in oops approach?
+---------------------------------------------
+*.instance method:inside method implementation if we are using insatnce variables is called "instance method".
+------------------
+*.static method:"@staticmethod decorator"
+----------------
+*.class methods:Inside method implementation if we are using only class variables(static variables) is called "static variables".
+---------------- In class method we use "@classmethod decorator".
+
+
+14.explain about __dict__?
+--------------------------
+*.Every object in python has an attribute denoted by __dict__.
+*.It store and display the object information in dictionary form.  
+*.Its maps the attribute name to its value.
+
+
+15.what is setter and getter method?
+------------------------------------
+
+setter:setter method is used to set the values to the  instance variables.It is also known as mutator method.
+-------
+		def set_variables(self,variable):
+		   self.variable=variable
+
+Getter:Getter method is also can be used to get the values to the instance variables.It is also known as accessor method.
+------
+		def get_variables(self,variable):
+		   return.self.variable
+
+16.what is an inner calsses?
+----------------------------
+sometimes we can declare a class inside another class is called "Inner classes"
+
+-->without existing one type of object  there is no chance of exsisting another object,then we should go for Inner classes.
+
+17.What is a nested method?
+---------------------------
+A method inside another method.
+
+18.What is a garbage collector?
+-------------------------------
+-->Hence the main objective of  garbage collector is to destroy the useless object
+-->If the object have no any refernce variable then the object is eligible for garbage collection.
+
+19.what is a destructor?
+------------------------
+Destructor is a special method and the name should be __del__.
+
+-->Just before destroying an object garbage collector will always calls the destructor to perform clean up activity
+  (resource dellocation activity like close data base,connection etc...)
+
+-->Once destructor excution completed then GC automatically destroy the onject.
+
+=======================================================================================================================================================================
+Object oriented programing language(oop's)---PART-2
+=======================================================================================================================================================================
+
+1.What is a composition & Aggregation?
+--------------------------------------
+
+*.composition:
+--------------
+Without existing a conatainer object there is no chance of excisting contained object.
+Then the container and contained objects are strongly asociated and the strong assosiation is nothing but "composition".
+
+*.Aggregation:
+--------------
+Without excisting a conatainer object there is a chance of excisting contained object.
+Then the container and contained objects are weakly asociated and the weakly assosiation is nothing but "aggregation".
+
+2.By cmposition(Has-A relationship)?
+------------------------------------
+By using class name or by creating object we can access members of one class inside another class is nothing but "By compostion(Has-A relationship)".
+
+
+3.By inheritance(Is-A relationship)?
+------------------------------------
+Whatever variables,methods and constructors available in parent class by default available to the child classes we are not required to rewrite.
+
+The main advantage of inheritance is code reusuability and we can extended the excisting the functionalities with some more functionalities. 
+
+4.what is inheritance?
+----------------------
+Deriving a new class from existing class is called ""Inheritance.
+
+new class->parent class
+existing class-->child class
+
+Inheritance is 5 types 
+----------------------
+
+*.single inheritance:The concept of inheriting properties from one class to another is known as "single inheritance". 
+---------------------
+
+*.Multilevel inheritance:The concept of inheriting properties from multiple classes to single class  with the concept of  
+-------------------------
+one after another is called "multi level inheritance".
+
+*.Hierarchial Inheritance:The concept of inheriting properties from one class into multiple classes which are present at the same level
+--------------------------
+is known as "Hierarchial inheritance".
+
+*.Multiple inheritance:The concept of inheriting from multiple classes into single class at a time is known as ""multiple inheritance.
+-----------------------
+
+*.Hybrid inheritance:combination of single,multi level,hierarchical,multiple inheritances are called "Hybrid inheritance".
+---------------------
+
+5.What is method resolution order(MRO)?
+---------------------------------------
+*.In hybrid inheritance the method resolution order is decided based on MRO algorithm.
+
+*.The alogorithm is also known as "C3 algorithm".
+
+*.samuele padroni proposed this algorithm.
+
+*.It follows DLR(Depth first left to right).
+
+i.e.child will get more priority than parent.
+
+*.Left parent will get more prority than right parent.
+
+
+
+=======================================================================================================================================================================
+Object oriented programing language(oop's)---PART-3
+=======================================================================================================================================================================
+
+1.What is polymarphism?
+-----------------------
+*.poly means many
+*.marphism means forms
+
+polymarphism many forms.
+
+2.What is duck typing phylosophy of python?
+-------------------------------------------
+-->In python we can't specify the type explicity. 
+-->Based on provided value at run time the type will be considered automatically.
+-->Hence the python is considered as dynamically typed programing language.
+
+3.What is a type of obj?
+------------------------
+We cannot decided at the begining,at run time we can pass any type,Then how we can decide the type.
+at the run time it's walk like duck and talk like duck it must be duck python follows the principle  
+is called "duck typing phylosophy of python".
+
+4.What is "Overloading"?
+------------------------
+
+*.Oparator overloading?
+-----------------------
+We can use same oparator for multiple purposes which is nothing but""oparator overloading.
+
+*.what is Method overloading?
+-----------------------------
+-->If two methods having a two name but diffrent types of arguments then those methods are said to be overload methods.
+-->But in python method overloading  is not possible.
+-->If we are trying to declare multiple methods with the same and diffrent no.of arguments then python will always considers only last method.
+
+*.What is constructor overloading?
+----------------------------------
+*.constructor overloading is not possible in python.
+*.If define the multiple constructors then the last constructor will be excuted.
+
+5.(i)What is Method overriding?
+-------------------------------
+-->Whatever members available to the parent class it is by defaultly available to the child class through the inheritance.
+-->If the child class is not satisfied with the parent class implementation the child class is allowed to redified  that method 
+inside the child class based on it's requirement.
+-->This concept is called "method overridding"
+-->overriding concept is applicable for both method and constructor.
+
+(ii).constructor overriding?
+----------------------------
+-->The child class doesn't contain constructor then parent class constructor will be excuted.
+-->From child class constructor we call that parent class constructor by using super() method.
+
+
+=======================================================================================================================================================================
+Object oriented programing language(oop's)---PART-4
+=======================================================================================================================================================================
+
+1.What is abstraction method?
+-----------------------------
+Sometimes we don't know about the implementation still we can declare a method.
+such type of methods are called "abstract method".
+
+i.e.Abstract method has only declaretion but not in implementation.
+-->In python we can declare abstract method by using  "@abstractmethod" decorator.
+
+2.What is abstract class?
+-------------------------
+Some times implemntation of a class is not complete,such type of partially implemented classes are called "abstract classes".
+
+-->Every abstract class in python should be derived from 'ABC' classes,which are present in abc module.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
